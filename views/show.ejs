@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Description</title>
+
+       
+
+   
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron" style="background-color: chocolate;">
+            <div class="container">
+                
+                <h2 style="color: cornsilk;">Description of <%=products.name %> is below : </h2>
+            </div>
+        </div>
+
+  
+    <section style="padding-left: 250px; padding-bottom: 50px;">
+        <div class="img-thumbnail">
+            <img style="height: 600px; width: 600px; "  src="<%= products.image%>">
+            <br>
+            <div class="caption">
+                <h2 ><%= products.name %></h2>
+                <h2 >&#x20B9; <%= products.price %></h2>
+                <hr>
+                <h3 style="display:inline-flex; "><%= products.description %></h3>
+               
+             
+                <hr>
+            
+    
+               <a class="btn btn-warning" href="/home2/<%= products._id%>">Book Now</a>
+               
+            </div>
+           
+        </div>
+      
+     
+       
+    </section>
+
+
+</body>
+</html>

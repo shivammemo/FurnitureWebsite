@@ -1,0 +1,4 @@
+In order to run this project we will have to import this dataset into mongoDB by following command :
+
+
+mongoimport -d furnicom -c products --type csv --file items.csv --headerline

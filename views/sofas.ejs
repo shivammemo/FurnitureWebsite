@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+    <title>Sofas</title>
+ 
+</head>
+<body>
+
+    <div class="container">
+        <div class="jumbotron" style="background-color: chocolate;">
+            <div class="container">
+                <h1 style="color: cornsilk;">Welcome to Sofa Section</h1>
+                <h2 style="color: cornsilk;">Available items are below : </h2>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+            <% products.forEach(function(prod){ %>
+            
+                 <div class="col-md-6 col-sm-6">
+                     <div class="card">
+                         <div class="img-thumbnail">
+                            <img class="card-img-top"  style="height: 400px; width: 500px; " src="<%=prod.image %>">
+                        
+                  
+                    <div class="caption">
+                        <h3 class="card-title" ><%= prod.name %></h3>
+                        <h4 class="card-text" >&#x20B9; <%= prod.price %></h4>
+                        <a href="/home/<%=prod._id%>" class="btn btn-primary">See full Description</a>
+                    </div>
+                </div>
+                </div>
+                <br>
+                <br>
+             </div>
+            <% }) %>
+        </div>
+           
+    </div>
+
+
+</body>
+</html>
+
